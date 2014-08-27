@@ -1,0 +1,1 @@
+#ifndef RENDERING_VIEW_HPP#define RENDERING_VIEW_HPP#include <SFML/Graphics.hpp>class UserView;class RenderingView{	public:			RenderingView(sf::RenderWindow *, const UserView *);				void operator()() const;			private:			sf::RenderWindow * window;		const UserView * view;};#endif
